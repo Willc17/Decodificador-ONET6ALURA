@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Decodificador | Decrypt</title>
+    <script src="./src/scripts/script.js" defer></script>
+    <link rel="stylesheet" href="./styles/style.css"
+
+</head>
+<body>
+    <header>
+        <img class="logo-alura" src="./img/LOGO ALURA.png" alt="Logo Alura">
+    </header>
+
+    <main>
+        <section class="box">
+
+            <div class="box__primary">
+                <textarea class="text-area" placeholder="Digite seu texto"></textarea>
+
+                <div class="information">
+                    <h1>Apenas letras minúsculas e sem acento.</h1>
+                </div>
+                
+                <div class="buttons">
+                    <button class="btn-criptografar" onclick="criptografarTexto()" >Criptografar</button>
+                    <button class="btn-descriptografar" onclick="descriptografarTexto()" >Descriptografar</button>
+                </div>
+            </div>
+
+            <div class="box__secondary">
+                <textarea id="texto-mensagem" class="text-area-secondary" placeholder=""></textarea>
+                <img id="imagemBusca" src="./img/IMAGEM BUSCA.jpg" alt="Uma pessoa olhando por uma lupa.">
+                <h1 id="msgNotFound" class="msgNotFound">Nenhuma mensagem encontrada</h1>
+                <p id="msgTypeText" class="msgTypeText">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                <button id="btn-copiar" class="btn-copiar" onclick="copiarTexto()">Copiar</button>
+            </div>
+
+        </section>
+    </main>
+    
+    <footer>
+         <h2 class="rodape-text">Desenvolvido por Willer de Carvalho Oliveira</h2>
+         
+    </footer>
+</body>
+</html>
